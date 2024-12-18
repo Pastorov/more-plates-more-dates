@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dating Advice Landing Page</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            background: #6895f7;
+            overflow-x: hidden;
+            color: #333;
+        }
+        header {
+            height: 100vh;
+            color: white;
+            text-align: center;
+            padding: 50px;
+            position: relative;
+        }
+        .carousel {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 80%;
+            max-width: 800px;
+            overflow: hidden;
+            border-radius: 10px;
+        }
+        .carousel-inner {
+            display: flex;
+            transition: transform 0.5s ease-in-out;
+        }
+        .carousel-item {
+            min-width: 33.33%;
+        }
+        .carousel img {
+            width: 100%;
+            display: block;
+        }
+        .carousel-control {
+            position: absolute;
+            top: 50%;
+            width: 50px;
+            height: 50px;
+            background: rgba(0, 0, 0, 0.5);
+            color: white;
+            border: none;
+            cursor: pointer;
+            transform: translateY(-50%);
+            z-index: 1;
+        }
+        .carousel-control.prev {
+            left: 10px;
+        }
+        .carousel-control.next {
+            right: 10px;
+        }
+        .section {
+            padding: 50px 20px;
+            text-align: center;
+        }
+        .tips, .testimonials, .faq, .reviews {
+            background: #ffffff;
+            margin: 20px auto;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            border-radius: 10px;
+            max-width: 800px;
+            overflow: hidden;
+        }
+        .flying-object {
+            width: 50px;
+            position: absolute;
+            animation: fly 20s linear infinite;
+        }
+        @keyframes fly {
+            0% { left: -50px; top: -50px; }
+            50% { left: 50%; top: 100vh; }
+            100% { left: 100vw; top: -50px; }
+        }
+        .parallax {
+            height: 500px;
+            background: url('parallax-bg.jpg') no-repeat center center/cover;
+            position: relative;
+            background-attachment: fixed;
+        }
+        .call-to-action {
+            background: #ff4081;
+            color: white;
+            padding: 15px 30px;
+            border-radius: 25px;
+            text-decoration: none;
+            display: inline-block;
+            margin: 20px 0;
+            transition: background 0.3s;
+        }
+        .call-to-action:hover {
+            background: #f50057;
+        }
+        .section-content {
+            animation: fadeIn 2s ease-in-out;
+        }
+        .review {
+            display: flex;
+            align-items: center;
+            margin: 20px;
+            padding: 20px;
+            background: #ffe0f7;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .review img {
+            border-radius: 50%;
+            width: 80px;
+            height: 80px;
+            margin-right: 20px;
+        }
+        .review-text {
+            max-width: 600px;
+            text-align: left;
+            color: #666;
+        }
+        .review strong {
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to Your Dating Guide</h1>
+        <p>Expert advice to improve your love life</p>
+        <a href="#contact" class="call-to-action">Get Personalized Advice</a>
+        <div class="carousel">
+            <button class="carousel-control prev">&lt;</button>
+            <div class="carousel-inner">
+                <div class="carousel-item"><img src="https://snipboard.io/Y9tbZy.jpg" alt="Result 1"></div>
+                <div class="carousel-item"><img src="https://snipboard.io/1rCKuy.jpg" alt="Result 2"></div>
+                <div class="carousel-item"><img src="https://snipboard.io/PGcL49.jpg" alt="Result 3"></div>
+                <div class="carousel-item"><img src="https://snipboard.io/kFHEq1.jpg" alt="Result 4"></div>
+                <div class="carousel-item"><img src="https://snipboard.io/LZGijR.jpg" alt="Result 5"></div>
+                <div class="carousel-item"><img src="https://snipboard.io/Y9tbZy.jpg" alt="Result 6"></div>
+                <div class="carousel-item"><img src="https://snipboard.io/PGcL49.jpg" alt="Result 7"></div>
+                <div class="carousel-item"><img src="https://snipboard.io/kFHEq1.jpg" alt="Result 8"></div>
+                <div class="carousel-item"><img src="https://snipboard.io/LZGijR.jpg" alt="Result 9"></div>
+            </div>
+            <button class="carousel-control next">&gt;</button>
+        </div>
+    </header>
+
+    <section class="section tips">
+        <h2>Top Dating Tips</h2>
+        <div class="section-content">
+            <p>Learn the best strategies to find and maintain a healthy relationship. From first dates to long-term commitments, we've got you covered.</p>
+        </div>
+    </section>
+
+    <div class="parallax"></div>
+
+    <section class="section testimonials">
+        <h2>Success Stories</h2>
+        <div class="section-content">
+            <p>Read testimonials from people who found love through our advice. Their stories are a testament to the effectiveness of our tips and strategies.</p>
+        </div>
+    </section>
+
+    <div class="parallax"></div>
+
+    <section class="section faq">
+        <h2>Frequently Asked Questions</h2>
+        <div class="section-content">
+            <p>Have questions? Find answers to the most common questions about dating and relationships here.</p>
+        </div>
+    </section>
+
+    <div class="parallax"></div>
+
+    <section class="section reviews">
+        <h2>User Reviews</h2>
+        <div class="section-content">
+            <div class="review">
+                <img src="https://snipboard.io/Y2dSU4.jpg" alt="User 1">
+                <div class="review-text">
+                    <p><strong>Agnieszka Przeworska</strong> "This dating advice has changed my life! I've never felt more confident and happy in my relationship."</p>
+                </div>
+            </div>
+            <div class="review">
+                <img src="https://snipboard.io/oxaIjE.jpg" alt="User 2">
+                <div class="review-text">
+                    <p><strong>Agnieszka Kowalska</strong> "I followed the tips and now I'm in a wonderful relationship. Highly recommend these insights!"</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="parallax"></div>
+
+    <section class="section contact" id="contact">
+        <h2>Contact Us</h2>
+        <div class="section-content">
+            <p>Have questions or need personalized advice? Get in touch with us!</p>
+        </div>
+    </section>
+
+    <img src="https://snipboard.io/kFHEq1.jpg" alt="Flying Object" class="flying-object">
+    <img src="https://snipboard.io/Y9tbZy.jpg" alt="Flying Object" class="flying-object" style="animation-delay: 5s;">
+    <img src="https://snipboard.io/kFHEq1.jpg" alt="Flying Object" class="flying-object" style="animation-delay: 10s;">
+
+    <script>
+        // JavaScript for Carousel
+        const carousel = document.querySelector('.carousel-inner');
+        const prevBtn = document.querySelector('.carousel-control.prev');
+        const nextBtn = document.querySelector('.carousel-control.next');
+        let currentIndex = 0;
+
+        function updateCarousel() {
+            carousel.style.transform = `translateX(-${currentIndex * 100 / 3}%)`;
+        }
+
+        function showPrev() {
+            currentIndex = (currentIndex === 0) ? Math.floor(carousel.children.length / 3) - 1 : currentIndex - 1;
+            updateCarousel();
+        }
+
+        function showNext() {
+            currentIndex = (currentIndex === Math.floor(carousel.children.length / 3) - 1) ? 0 : currentIndex + 1;
+            updateCarousel();
+        }
+
+        prevBtn.addEventListener('click', showPrev);
+        nextBtn.addEventListener('click', showNext);
+
+        updateCarousel();
+    </script>
+</body>
+</html>
